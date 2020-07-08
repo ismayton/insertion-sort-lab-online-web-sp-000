@@ -22,8 +22,8 @@ function findMinAndRemove(array)
     {
     min = array[i]
     counter = i
-    array.splice(counter, 1)
     }
   }
+  array.splice(counter, 1)
   return min
 }

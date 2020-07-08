@@ -21,7 +21,8 @@ function insertionSort(array)
   sortedArray.push(newMin);
   if(array.length > 0)
   {
-    return insertionSort(array)
+    let newMin = findMinAndRemove(array);
+    sortedArray.push(newMin);
   }
   else
   {

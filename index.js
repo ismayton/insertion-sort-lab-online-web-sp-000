@@ -4,10 +4,12 @@ function findMinAndRemove(array)
   for(i = 0; i < array.length; i++)
   {
     if(array[i] < min)
-    min = array[i]
-    minIndex = i
+    {
+      min = array[i]
+      minIndex = i
+    }
   }
-  array.slice()
+  array.slice(minIndex, 1)
 }
 
 function insertionSort(array){

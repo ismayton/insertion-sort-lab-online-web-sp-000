@@ -20,10 +20,10 @@ function insertionSort(array)
   sortedArray.push(findMinAndRemove(array));
   if(array.length > 0)
   {
-  insertionSort(array)
+    insertionSort(array)
   }
   else
   {
-   return sortedArray;
+    return sortedArray;
   }
 }

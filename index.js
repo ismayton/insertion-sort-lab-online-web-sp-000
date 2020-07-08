@@ -5,8 +5,9 @@ function findMinAndRemove(array)
   {
     if(array[i] < min)
     min = array[i]
-    
+    minIndex = i
   }
+  array.slice()
 }
 
 function insertionSort(array){

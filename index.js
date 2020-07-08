@@ -20,11 +20,8 @@ function insertionSort(array)
   let newMin;
   if(array.length > 0)
   {
-    let newMin = findMinAndRemove(array);
+    newMin = findMinAndRemove(array);
     sortedArray.push(newMin);
   }
-  else
-  {
-    return sortedArray;
-  }
+return sortedArray;
 }

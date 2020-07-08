@@ -17,6 +17,7 @@ function findMinAndRemove(array)
 function insertionSort(array)
 {
   let sortedArray = [];
+  let newMin;
   if(array.length > 0)
   {
     let newMin = findMinAndRemove(array);

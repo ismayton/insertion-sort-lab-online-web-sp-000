@@ -25,3 +25,18 @@ function insertionSort(array)
   }
 return sortedArray;
 }
+
+function findMinAndRemove(array)
+{
+  let counter = 0
+  let min = array[0]
+  for(let i = 0; i < array.length; i++)
+  {
+    if(array[i] < min)
+    {
+    min = array[i]
+    counter = i
+    array.splice(counter, 1)
+    }
+  }
+}

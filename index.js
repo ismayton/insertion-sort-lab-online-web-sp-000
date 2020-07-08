@@ -1,17 +1,3 @@
-
-
-function insertionSort(array)
-{
-  let sortedArray = [];
-  let newMin;
-  while(array.length > 0)
-  {
-    newMin = findMinAndRemove(array);
-    sortedArray.push(newMin);
-  }
-return sortedArray;
-}
-
 function findMinAndRemove(array)
 {
   let counter = 0
@@ -27,3 +13,16 @@ function findMinAndRemove(array)
   array.splice(counter, 1)
   return min
 }
+
+function insertionSort(array)
+{
+  let sortedArray = [];
+  let newMin;
+  while(array.length > 0)
+  {
+    newMin = findMinAndRemove(array);
+    sortedArray.push(newMin);
+  }
+return sortedArray;
+}
+

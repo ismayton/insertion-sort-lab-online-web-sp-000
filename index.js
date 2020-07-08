@@ -20,7 +20,7 @@ function insertionSort(array)
   sortedArray.push(findMinAndRemove(array));
   if(array.length > 0)
   {
-    insertionSort(array)
+    return insertionSort(array)
   }
   else
   {
